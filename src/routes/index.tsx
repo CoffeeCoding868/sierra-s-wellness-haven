@@ -257,7 +257,7 @@ function Index() {
           </Reveal>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {pricing.map((p, i) => {
-              const item = t.pricingS.items[p.id];
+              const item = t.pricingS.items[p.id] ?? { name: p.id, detail: "" };
               const suffix = p.note ? p.note.split("|")[lang === "fr" ? 0 : 1] : "";
               return (
                 <Reveal key={p.id} delay={(i % 3) * 80}>
