@@ -334,18 +334,9 @@ function Index() {
         <Reveal>
           <SectionTitle title={t.faq.title} />
         </Reveal>
-        <div className="divide-y divide-border border-y border-border">
-          {t.faq.items.map((f, i) => (
-            <Reveal key={f.q} delay={i * 60}>
-              <details className="group py-5">
-                <summary className="cursor-pointer list-none text-lg marker:hidden">
-                  <span className="font-display">{f.q}</span>
-                </summary>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
-              </details>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal>
+          <FaqSearch items={t.faq.items} searchLabel={t.faq.search} emptyLabel={t.faq.empty} />
+        </Reveal>
         <div className="mt-10">
           <BookButton label={t.book} />
         </div>
