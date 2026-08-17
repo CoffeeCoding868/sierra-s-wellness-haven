@@ -29,7 +29,7 @@ type Dict = {
   pilates: { title: string; intro: string; classes: { name: string; desc: string }[]; benefits: string[] };
   pricingS: { title: string; intro: string; popular: string; book: string; disclaimer: string; items: Record<string, { name: string; detail: string }> };
   studio: { title: string; address: string; access: string; ambiance: string; directions: string };
-  faq: { title: string; items: { q: string; a: string }[] };
+  faq: { title: string; search: string; empty: string; items: { q: string; a: string }[] };
   contact: { title: string; intro: string; name: string; email: string; message: string; send: string; sent: string; follow: string; legal: string };
 };
 
@@ -96,6 +96,8 @@ export const content: Record<Lang, Dict> = {
     },
     faq: {
       title: "Questions fréquentes",
+      search: "Rechercher une question…",
+      empty: "Aucune réponse ne correspond à votre recherche. Écrivez-moi via le formulaire ci-dessous.",
       items: [
         { q: "Faut-il être expérimenté ?", a: "Non. Les cours sont ouverts à tous les niveaux et les variations sont proposées au fur et à mesure. Beaucoup d'élèves commencent ici." },
         { q: "Que dois-je apporter ?", a: "Une tenue confortable, une bouteille d'eau et une paire de chaussettes. Les tapis et accessoires sont fournis." },
@@ -178,6 +180,8 @@ export const content: Record<Lang, Dict> = {
     },
     faq: {
       title: "Frequently asked",
+      search: "Search a question…",
+      empty: "No answer matches your search. Write to me using the form below.",
       items: [
         { q: "Do I need experience?", a: "No. Classes are open to all levels and variations are offered throughout. Many students start right here." },
         { q: "What should I bring?", a: "Comfortable clothes, a water bottle and a pair of socks. Mats and props are provided." },
