@@ -96,6 +96,8 @@ export const content: Record<Lang, Dict> = {
     },
     faq: {
       title: "Questions fréquentes",
+      search: "Rechercher une question…",
+      empty: "Aucune réponse ne correspond à votre recherche. Écrivez-moi via le formulaire ci-dessous.",
       items: [
         { q: "Faut-il être expérimenté ?", a: "Non. Les cours sont ouverts à tous les niveaux et les variations sont proposées au fur et à mesure. Beaucoup d'élèves commencent ici." },
         { q: "Que dois-je apporter ?", a: "Une tenue confortable, une bouteille d'eau et une paire de chaussettes. Les tapis et accessoires sont fournis." },
