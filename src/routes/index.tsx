@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 
+import { FaqSearch } from "@/components/FaqSearch";
 import { Reveal } from "@/components/Reveal";
 import { LUMA_URL, content, pricing, type Lang } from "@/lib/content";
 import heroStudio from "@/assets/hero-studio.jpg";
