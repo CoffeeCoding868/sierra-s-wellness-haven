@@ -29,7 +29,7 @@ type Dict = {
   pilates: { title: string; intro: string; classes: { name: string; desc: string }[]; benefits: string[] };
   pricingS: { title: string; intro: string; popular: string; book: string; disclaimer: string; items: Record<string, { name: string; detail: string }> };
   studio: { title: string; address: string; access: string; ambiance: string; directions: string };
-  faq: { title: string; items: { q: string; a: string }[] };
+  faq: { title: string; search: string; empty: string; items: { q: string; a: string }[] };
   contact: { title: string; intro: string; name: string; email: string; message: string; send: string; sent: string; follow: string; legal: string };
 };
 
