@@ -180,6 +180,8 @@ export const content: Record<Lang, Dict> = {
     },
     faq: {
       title: "Frequently asked",
+      search: "Search a question…",
+      empty: "No answer matches your search. Write to me using the form below.",
       items: [
         { q: "Do I need experience?", a: "No. Classes are open to all levels and variations are offered throughout. Many students start right here." },
         { q: "What should I bring?", a: "Comfortable clothes, a water bottle and a pair of socks. Mats and props are provided." },
