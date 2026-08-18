@@ -306,11 +306,11 @@ function Index() {
             <div className="overflow-hidden rounded-[28px]">
               <img
                 src={studioCorner}
-                alt="Coin lumineux du studio Sierra Wellness Space"
-                width={1200}
-                height={900}
+                alt="Tapis de yoga, tasse de thé et intentions écrites au sol lors d'un atelier au studio"
+                width={571}
+                height={789}
                 loading="lazy"
-                className="h-72 w-full object-cover sm:h-96"
+                className="h-80 w-full object-cover object-center sm:h-[26rem]"
               />
             </div>
             <address className="mt-6 not-italic text-lg">{t.studio.address}</address>
