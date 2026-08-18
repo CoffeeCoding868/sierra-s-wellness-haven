@@ -240,7 +240,7 @@ function Index() {
       <Discipline
         id="yoga"
         image={yogaImg}
-        alt="Tapis de yoga et accessoires dans le studio de Strasbourg Cronenbourg"
+        alt="Crique turquoise entre les falaises, image d'inspiration pour la respiration et le calme en cours de yoga"
         data={t.yoga}
         bookLabel={t.book}
       />
