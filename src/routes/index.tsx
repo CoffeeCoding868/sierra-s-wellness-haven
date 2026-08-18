@@ -4,11 +4,17 @@ import { useState, type FormEvent } from "react";
 import { FaqSearch } from "@/components/FaqSearch";
 import { Reveal } from "@/components/Reveal";
 import { LUMA_URL, content, pricing, type Lang } from "@/lib/content";
-import heroStudio from "@/assets/hero-studio.jpg";
-import sierraPortrait from "@/assets/sierra-portrait.jpg";
-import yogaImg from "@/assets/yoga.jpg";
-import pilatesImg from "@/assets/pilates.jpg";
-import studioCorner from "@/assets/studio-corner.jpg";
+import heroAsset from "@/assets/photo-1.png.asset.json";
+import portraitAsset from "@/assets/photo-2.png.asset.json";
+import yogaAsset from "@/assets/photo-3.png.asset.json";
+import pilatesAsset from "@/assets/photo-4.png.asset.json";
+import studioAsset from "@/assets/photo-5.png.asset.json";
+
+const heroStudio = heroAsset.url;
+const sierraPortrait = portraitAsset.url;
+const yogaImg = yogaAsset.url;
+const pilatesImg = pilatesAsset.url;
+const studioCorner = studioAsset.url;
 
 const TITLE = "Sierra Wellness Space — Yoga & Pilates à Strasbourg Cronenbourg";
 const DESCRIPTION =
