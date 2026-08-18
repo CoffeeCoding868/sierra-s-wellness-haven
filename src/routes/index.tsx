@@ -4,11 +4,17 @@ import { useState, type FormEvent } from "react";
 import { FaqSearch } from "@/components/FaqSearch";
 import { Reveal } from "@/components/Reveal";
 import { LUMA_URL, content, pricing, type Lang } from "@/lib/content";
-import heroStudio from "@/assets/hero-studio.jpg";
-import sierraPortrait from "@/assets/sierra-portrait.jpg";
-import yogaImg from "@/assets/yoga.jpg";
-import pilatesImg from "@/assets/pilates.jpg";
-import studioCorner from "@/assets/studio-corner.jpg";
+import heroAsset from "@/assets/photo-1.png.asset.json";
+import portraitAsset from "@/assets/photo-2.png.asset.json";
+import yogaAsset from "@/assets/photo-3.png.asset.json";
+import pilatesAsset from "@/assets/photo-4.png.asset.json";
+import studioAsset from "@/assets/photo-5.png.asset.json";
+
+const heroStudio = heroAsset.url;
+const sierraPortrait = portraitAsset.url;
+const yogaImg = yogaAsset.url;
+const pilatesImg = pilatesAsset.url;
+const studioCorner = studioAsset.url;
 
 const TITLE = "Sierra Wellness Space — Yoga & Pilates à Strasbourg Cronenbourg";
 const DESCRIPTION =
@@ -194,10 +200,10 @@ function Index() {
             <div className="overflow-hidden rounded-[999px_999px_28px_28px] border border-border/60">
               <img
                 src={heroStudio}
-                alt="Intérieur lumineux du studio de yoga et Pilates Sierra Wellness Space à Strasbourg Cronenbourg"
-                width={1600}
-                height={1200}
-                className="h-[420px] w-full object-cover sm:h-[540px]"
+                alt="Sierra assise au sommet d'un rocher face aux montagnes, respiration et pleine conscience"
+                width={571}
+                height={789}
+                className="h-[440px] w-full object-cover object-center sm:h-[620px]"
               />
             </div>
           </Reveal>
@@ -212,8 +218,8 @@ function Index() {
               <img
                 src={sierraPortrait}
                 alt="Sierra Wang, fondatrice et professeure de yoga et Pilates"
-                width={1008}
-                height={1264}
+                width={475}
+                height={603}
                 loading="lazy"
                 className="h-full w-full object-cover"
               />
@@ -234,7 +240,7 @@ function Index() {
       <Discipline
         id="yoga"
         image={yogaImg}
-        alt="Tapis de yoga et accessoires dans le studio de Strasbourg Cronenbourg"
+        alt="Crique turquoise entre les falaises, image d'inspiration pour la respiration et le calme en cours de yoga"
         data={t.yoga}
         bookLabel={t.book}
       />
@@ -243,7 +249,7 @@ function Index() {
       <Discipline
         id="pilates"
         image={pilatesImg}
-        alt="Séance de Pilates au sol dans un studio lumineux à Strasbourg"
+        alt="Sierra en posture d'ouverture, travail du gainage et de la mobilité inspiré du Pilates"
         data={t.pilates}
         bookLabel={t.book}
         reverse
@@ -300,11 +306,11 @@ function Index() {
             <div className="overflow-hidden rounded-[28px]">
               <img
                 src={studioCorner}
-                alt="Coin lumineux du studio Sierra Wellness Space"
-                width={1200}
-                height={900}
+                alt="Tapis de yoga, tasse de thé et intentions écrites au sol lors d'un atelier au studio"
+                width={571}
+                height={789}
                 loading="lazy"
-                className="h-72 w-full object-cover sm:h-96"
+                className="h-80 w-full object-cover object-center sm:h-[26rem]"
               />
             </div>
             <address className="mt-6 not-italic text-lg">{t.studio.address}</address>
@@ -463,8 +469,8 @@ function Discipline({
             <img
               src={image}
               alt={alt}
-              width={1200}
-              height={900}
+              width={571}
+              height={789}
               loading="lazy"
               className="h-80 w-full object-cover sm:h-[26rem]"
             />
