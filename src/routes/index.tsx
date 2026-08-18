@@ -200,10 +200,10 @@ function Index() {
             <div className="overflow-hidden rounded-[999px_999px_28px_28px] border border-border/60">
               <img
                 src={heroStudio}
-                alt="Intérieur lumineux du studio de yoga et Pilates Sierra Wellness Space à Strasbourg Cronenbourg"
-                width={1600}
-                height={1200}
-                className="h-[420px] w-full object-cover sm:h-[540px]"
+                alt="Sierra assise au sommet d'un rocher face aux montagnes, respiration et pleine conscience"
+                width={571}
+                height={789}
+                className="h-[440px] w-full object-cover object-center sm:h-[620px]"
               />
             </div>
           </Reveal>
