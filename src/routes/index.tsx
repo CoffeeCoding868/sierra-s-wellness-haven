@@ -218,8 +218,8 @@ function Index() {
               <img
                 src={sierraPortrait}
                 alt="Sierra Wang, fondatrice et professeure de yoga et Pilates"
-                width={1008}
-                height={1264}
+                width={475}
+                height={603}
                 loading="lazy"
                 className="h-full w-full object-cover"
               />
@@ -469,8 +469,8 @@ function Discipline({
             <img
               src={image}
               alt={alt}
-              width={1200}
-              height={900}
+              width={571}
+              height={789}
               loading="lazy"
               className="h-80 w-full object-cover sm:h-[26rem]"
             />
