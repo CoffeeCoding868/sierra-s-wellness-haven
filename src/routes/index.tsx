@@ -249,7 +249,7 @@ function Index() {
       <Discipline
         id="pilates"
         image={pilatesImg}
-        alt="Séance de Pilates au sol dans un studio lumineux à Strasbourg"
+        alt="Sierra en posture d'ouverture, travail du gainage et de la mobilité inspiré du Pilates"
         data={t.pilates}
         bookLabel={t.book}
         reverse
